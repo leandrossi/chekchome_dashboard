@@ -1,0 +1,131 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Add horizontal scroll for smaller screens */
+}
+
+#dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#dashboard-table th,
+#dashboard-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#dashboard-table th {
+    background-color: #e9e9e9;
+    font-weight: bold;
+}
+
+#dashboard-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#chat-history-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    max-height: 500px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-header h2 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+#close-chat {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#chat-messages-container {
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f9f9f9;
+}
+
+.user-message, .bot-message {
+    max-width: 80%;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    text-align: right;
+    border-bottom-right-radius: 0;
+}
+
+.bot-message {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    align-self: flex-start;
+    text-align: left;
+    border-bottom-left-radius: 0;
+}
+
+.message-timestamp {
+    font-size: 0.7em;
+    color: #999;
+    margin-top: 4px;
+}
+
+#dashboard-table td:first-child {
+    cursor: pointer;
+    color: #007bff;
+}
+
+#dashboard-table td:first-child:hover {
+    text-decoration: underline;
+}
+
+#dashboard-table tbody tr:hover {
+    background-color: #f1f1f1;
+}

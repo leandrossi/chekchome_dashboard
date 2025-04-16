@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckHome Agent Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Supabase Client Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <h1>CheckHome Agent Dashboard</h1>
+    <div class="container">
+        <table id="dashboard-table">
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Phone</th>
+                    <th>Customer Type</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Data will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="chat-history-panel" style="display:none;">
+        <div id="chat-header">
+            <h2>Chat History for <span id="client-name"></span></h2>
+            <button id="close-chat">Close</button>
+        </div>
+        <div id="chat-messages-container">
+            <!-- Chat messages will be appended here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

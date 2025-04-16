@@ -1,0 +1,15 @@
+id,created_at,phone,conversation_id,bot_message,user_message,message_type,active
+13,,5491131747496@s.whatsapp.net,7d296744-ba1d-470d-b9a0-959a8ef24712,"¡Genial! Te cuento: en CheckHome realizamos inspecciones técnicas a propiedades, ya sean casas, departamentos o incluso desarrollos completos, utilizando arquitectos y técnicos especializados que revisan más de 200 puntos críticos. 
+
+El proceso es así:
+1. Programamos la visita en el horario que te convenga (puedes elegir mañana o tarde). No es necesario que estés presente, solo alguien que pueda abrir la propiedad.
+2. Durante la visita, se inspeccionan aspectos fundamentales como electricidad, gas, plomería, condiciones generales (pintura, aberturas, terminaciones), entre otros.
+3. Una vez terminada la inspección, en 24 horas recibís un informe detallado con todas las deficiencias encontradas y los costos estimados de reparación.
+4. Con estos datos, podés negociar, decidir sobre la compra o buscar alternativas.
+
+¿Te gustaría que te brinde información más específica en función del tipo de propiedad que querés inspeccionar? Por ejemplo, ¿se trata de un departamento, casa u otro tipo de inmueble? Además, necesito saber dónde está ubicada (teniendo en cuenta que trabajamos dentro del AMBA). ¡Contame un poco más para poder ayudarte mejor!",Me das más información,messages.upsert,true
+14,,5491131747496@s.whatsapp.net,7d296744-ba1d-470d-b9a0-959a8ef24712,"Contame, ¿qué información necesitás exactamente? ¿Te interesa saber detalles sobre el proceso de inspección, costos o algún tipo de propiedad en particular? ¡Avisame para ayudarte mejor!",entrenamiento1004 pregunta ¿me das información? Respuesta: que necesitas,messages.upsert,true
+15,,5491131747496@s.whatsapp.net,7d296744-ba1d-470d-b9a0-959a8ef24712,"¡Hola! Soy Alejandro de CheckHome. ¿Cómo te llamás y en qué puedo ayudarte con la inspección? ¿Estás pensando en inspeccionar una casa, un departamento u otro tipo de propiedad? Contame un poco más para poder darte la info adecuada.",Hola,messages.upsert,true
+16,,5491131747496@s.whatsapp.net,7d296744-ba1d-470d-b9a0-959a8ef24712,"¡Hola, hola! ¿Cómo estás? Soy Alejandro de CheckHome. ¿Querés más info sobre nuestras inspecciones? Contame qué necesitás saber o en qué tipo de propiedad estás interesado: ¿una casa, un departamento o algún otro inmueble? Así te paso la info detallada que buscas.",Hola,messages.upsert,true
+17,,5491131747496@s.whatsapp.net,7d296744-ba1d-470d-b9a0-959a8ef24712,¡Hola! Soy Alejandro de CheckHome. ¿Cómo te llamás? ¿En qué puedo ayudarte hoy con respecto a una inspección?,Hola,messages.upsert,true
+18,,5491131747496@s.whatsapp.net,7d296744-ba1d-470d-b9a0-959a8ef24712,"¡Hola! ¿Cómo estás? Soy Alejandro de CheckHome. ¿Cómo te llamás y en qué puedo ayudarte hoy? ¿Estás pensando en inspeccionar alguna casa, departamento u otro tipo de propiedad? Contame para ver cómo te puedo asesorar.",Hola,messages.upsert,true
