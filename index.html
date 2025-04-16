@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CheckHome Agent Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Supabase Client Library -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
@@ -26,12 +26,14 @@
         </table>
     </div>
 
-    <div id="chat-history-panel" style="display:none;">
+    <div id="chat-history-panel" class="hidden" role="region" aria-label="Chat history panel">
         <div id="chat-header">
             <h2>Chat History for <span id="client-name"></span></h2>
-            <button id="close-chat">Close</button>
+            <button id="close-chat" aria-label="Close chat panel" tabindex="0">
+                <span class="visually-hidden">Close chat</span>×
+            </button>
         </div>
-        <div id="chat-messages-container">
+        <div id="chat-messages-container" tabindex="0" aria-live="polite" aria-relevant="additions">
             <!-- Chat messages will be appended here -->
         </div>
     </div>
